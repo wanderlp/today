@@ -9,3 +9,7 @@
 3. Apps may have multiple storyboards. The Main Interface setting in the app's project file determines which storyboard the app loads when it launches.
 
 4. The `#if DEBUG` flag is a compilation directive that prevents the enclosed code from compiling when you build the app for release. You can use this flag for testing code in debug builds - or for providing sample test data.
+
+5. Type aliases are helpful for referring to an existing type with a name that's more expressive.
+
+6. Use implicitly unwrapped optionals only when you know that the optional will have a value. Otherwise, you risk triggering a runtime error that inmediately terminates the app. (ie: `var dataSource: DataSource!`)
