@@ -13,6 +13,7 @@ class ReminderListViewController: UICollectionViewController {
         super.viewDidLoad()
         
         let listLayout = listLayout()
+        collectionView.collectionViewLayout = listLayout
     }
 
     private func listLayout() -> UICollectionViewCompositionalLayout {
