@@ -46,6 +46,8 @@ class ReminderListViewController: UICollectionViewController {
             // performance. Reusing cells allows your app to
             // perform well even with a vast number of items
         }
+        
+        var snapshot = Snapshot()
     }
     
     private func listLayout() -> UICollectionViewCompositionalLayout {
