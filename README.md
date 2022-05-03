@@ -13,3 +13,5 @@
 5. Type aliases are helpful for referring to an existing type with a name that's more expressive.
 
 6. Use implicitly unwrapped optionals only when you know that the optional will have a value. Otherwise, you risk triggering a runtime error that inmediately terminates the app. (ie: `var dataSource: DataSource!`)
+
+7. Diffable data sources manage the state of your data with snapshots. A snapshot represents the state of your data at a specific point in time. To display data using a snapshot, you'll create the snapshot, populate the snapshot with the state of data that you want to display, and then apply the snapshot in the user interface.
