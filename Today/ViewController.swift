@@ -49,6 +49,7 @@ class ReminderListViewController: UICollectionViewController {
         
         var snapshot = Snapshot()
         snapshot.appendSections([0])
+        snapshot.appendItems(Reminder.sampleData.map { $0.title })
     }
     
     private func listLayout() -> UICollectionViewCompositionalLayout {
