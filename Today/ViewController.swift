@@ -51,6 +51,9 @@ class ReminderListViewController: UICollectionViewController {
         snapshot.appendSections([0])
         snapshot.appendItems(Reminder.sampleData.map { $0.title })
         dataSource.apply(snapshot)
+        
+        // Assign the datasource to the collection view
+        collectionView.dataSource = dataSource
     }
     
     private func listLayout() -> UICollectionViewCompositionalLayout {
