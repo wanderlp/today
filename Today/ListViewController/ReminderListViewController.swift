@@ -8,11 +8,6 @@
 import UIKit
 
 class ReminderListViewController: UICollectionViewController {
-    // Type aliases are helpful for referring to an existing
-    // type with a name that's more expressive
-    typealias DataSource = UICollectionViewDiffableDataSource<Int, String>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<Int, String>
-    
     var dataSource: DataSource!
     
     override func viewDidLoad() {
