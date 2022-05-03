@@ -23,6 +23,7 @@ extension ReminderListViewController {
         // configuration with the predefined system style
         var contentConfiguration = cell.defaultContentConfiguration()
         contentConfiguration.text = reminder.title
+        contentConfiguration.secondaryText = reminder.dueDate.dayAndTimeText
         cell.contentConfiguration = contentConfiguration
     }
 }
