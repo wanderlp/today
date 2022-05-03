@@ -31,6 +31,15 @@ class ReminderListViewController: UICollectionViewController {
             contentConfiguration.text = reminder.title
             cell.contentConfiguration = contentConfiguration
         }
+        
+        dataSource = DataSource(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, itemIdentifier: String) in
+            // In the initializer, you pass a closure that
+            // configures and returns a cell for a collection
+            // view. The closure accepts two inputs: an index
+            // path to the location of the cell in the collection
+            // view and an item identifier
+            return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
+        }
     }
     
     private func listLayout() -> UICollectionViewCompositionalLayout {
