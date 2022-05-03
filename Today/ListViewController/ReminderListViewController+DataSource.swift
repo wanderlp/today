@@ -5,4 +5,10 @@
 //  Created by Wanderson López on 3/05/22.
 //
 
-import Foundation
+import UIKit
+
+extension ReminderListViewController {
+    // This extension will contain all the behaviors that
+    // let the ReminderListViewController act as data
+    // source to the reminder list
+}
