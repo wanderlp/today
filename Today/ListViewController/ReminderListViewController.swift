@@ -18,8 +18,7 @@ class ReminderListViewController: UICollectionViewController {
         
         // Cell registration specifies how to configure the content
         // and appearance of a cell
-        let cellRegistration = UICollectionView.CellRegistration { (cell: UICollectionViewListCell, indexPath: IndexPath, itemIdentifier: String) in
-        }
+        let cellRegistration = UICollectionView.CellRegistration(handler: cellRegistrationHandler)
         
         dataSource = DataSource(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, itemIdentifier: String) in
             // In the initializer, you pass a closure that
