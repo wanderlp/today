@@ -39,6 +39,11 @@ class ReminderListViewController: UICollectionViewController {
             // path to the location of the cell in the collection
             // view and an item identifier
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
+            
+            // You could create a new cell for every item, but
+            // the initialization cost would degrade your app's
+            // performance. Reusing cells allows your app to
+            // perform well even with a vast number of items
         }
     }
     
