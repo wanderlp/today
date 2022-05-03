@@ -13,3 +13,9 @@ struct Reminder {
     var notes: String? = nil
     var isComplete: Bool = false
 }
+
+#if DEBUG
+extension Reminder {
+    
+}
+#endif
