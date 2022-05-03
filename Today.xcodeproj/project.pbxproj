@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B979B2228219D17004EDD18 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B979B2128219D17004EDD18 /* Reminder.swift */; };
 		7BEE51D928219A4F00BFBFFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE51D828219A4F00BFBFFE /* AppDelegate.swift */; };
 		7BEE51DB28219A4F00BFBFFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE51DA28219A4F00BFBFFE /* SceneDelegate.swift */; };
 		7BEE51DD28219A4F00BFBFFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEE51DC28219A4F00BFBFFE /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B979B2128219D17004EDD18 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Reminder.swift; path = ../../../today/Today/Models/Reminder.swift; sourceTree = "<group>"; };
 		7BEE51D528219A4F00BFBFFE /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEE51D828219A4F00BFBFFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BEE51DA28219A4F00BFBFFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B979B2028219D02004EDD18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B979B2128219D17004EDD18 /* Reminder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7BEE51CC28219A4F00BFBFFE = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		7BEE51D728219A4F00BFBFFE /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				7B979B2028219D02004EDD18 /* Models */,
 				7BEE51D828219A4F00BFBFFE /* AppDelegate.swift */,
 				7BEE51DA28219A4F00BFBFFE /* SceneDelegate.swift */,
 				7BEE51DC28219A4F00BFBFFE /* ViewController.swift */,
@@ -145,6 +156,7 @@
 				7BEE51D928219A4F00BFBFFE /* AppDelegate.swift in Sources */,
 				7BEE51DB28219A4F00BFBFFE /* SceneDelegate.swift in Sources */,
 				7BEE51E328219A4F00BFBFFE /* Today.xcdatamodeld in Sources */,
+				7B979B2228219D17004EDD18 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
