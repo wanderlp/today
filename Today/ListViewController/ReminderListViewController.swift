@@ -20,7 +20,7 @@ class ReminderListViewController: UICollectionViewController {
         // and appearance of a cell
         let cellRegistration = UICollectionView.CellRegistration(handler: cellRegistrationHandler)
         
-        dataSource = DataSource(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, itemIdentifier: String) in
+        dataSource = DataSource(collectionView: collectionView) { (collectionView: UICollectionView, indexPath: IndexPath, itemIdentifier: Reminder.ID) in
             // In the initializer, you pass a closure that
             // configures and returns a cell for a collection
             // view. The closure accepts two inputs: an index
