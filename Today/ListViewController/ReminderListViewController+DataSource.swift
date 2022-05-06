@@ -16,6 +16,13 @@ extension ReminderListViewController {
     typealias DataSource = UICollectionViewDiffableDataSource<Int, Reminder.ID>
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Reminder.ID>
     
+    var reminderCompleteValue: String {
+        NSLocalizedString("Completed", comment: "Reminder completed value")
+    }
+    var reminderNotCompleteValue: String {
+        NSLocalizedString("Not completed", comment: "Reminder not completed value")
+    }
+    
     func updateSnapshot(reloading ids: [Reminder.ID] = []) {
         var snapshot = Snapshot()
         snapshot.appendSections([0])
