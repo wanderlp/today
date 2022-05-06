@@ -17,7 +17,7 @@ extension ReminderListViewController {
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Reminder.ID>
     
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, id: Reminder.ID) {
-        let reminder = Reminder.sampleData[indexPath.item]
+        let reminder = reminders[indexPath.item]
         
         // defaultContentConfiguration() creates a content
         // configuration with the predefined system style
