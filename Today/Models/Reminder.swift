@@ -15,6 +15,10 @@ struct Reminder: Identifiable {
     var isComplete: Bool = false
 }
 
+extension Array where Element == Reminder {
+    
+}
+
 #if DEBUG
 extension Reminder {
     static var sampleData = [
