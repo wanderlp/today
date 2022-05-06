@@ -39,6 +39,7 @@ extension ReminderListViewController {
     func completeReminder(with id: Reminder.ID) {
         var reminder = reminder(for: id)
         reminder.isComplete.toggle()
+        update(reminder, with: id)
     }
     
     private func doneButtonConfiguration(for reminder: Reminder) -> UICellAccessory.CustomViewConfiguration {
