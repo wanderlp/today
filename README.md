@@ -23,3 +23,5 @@ https://developer.apple.com/tutorials/app-dev-training/getting-started-with-toda
 8. The `@objc` attributes makes the method available to Objective-C code.
 
 9. `Target-Action` is a design pattern in which an object hodls the information necessary to send a message to another object when an event ocurrs. In the Today App, the `touch UpInside` event occurs when a user taps the done button, which sends the `didPressDoneButton: sender` message to the view controller.
+
+10. VoiceOver alerts users when actions are available for an object. If a user decides to hear the options, VoiceOver reads the name of each action.
