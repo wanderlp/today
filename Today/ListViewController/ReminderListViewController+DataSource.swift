@@ -16,10 +16,10 @@ extension ReminderListViewController {
     typealias DataSource = UICollectionViewDiffableDataSource<Int, Reminder.ID>
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Reminder.ID>
     
-    var reminderCompleteValue: String {
+    var reminderCompletedValue: String {
         NSLocalizedString("Completed", comment: "Reminder completed value")
     }
-    var reminderNotCompleteValue: String {
+    var reminderNotCompletedValue: String {
         NSLocalizedString("Not completed", comment: "Reminder not completed value")
     }
     
