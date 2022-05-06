@@ -27,7 +27,7 @@ extension ReminderListViewController {
     }
     
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, id: Reminder.ID) {
-        let reminder = reminders[indexPath.item]
+        let reminder = reminder(for: id)
         
         // defaultContentConfiguration() creates a content
         // configuration with the predefined system style
@@ -50,7 +50,7 @@ extension ReminderListViewController {
         var reminder = reminder(for: id)
         reminder.isComplete.toggle()
         update(reminder, with: id)
-        updateSnapshot()
+        updateSnapshot(reloading: [id])
     }
     
     private func doneButtonConfiguration(for reminder: Reminder) -> UICellAccessory.CustomViewConfiguration {
