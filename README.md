@@ -20,4 +20,6 @@ https://developer.apple.com/tutorials/app-dev-training/getting-started-with-toda
 
 7. Diffable data sources manage the state of your data with snapshots. A snapshot represents the state of your data at a specific point in time. To display data using a snapshot, you'll create the snapshot, populate the snapshot with the state of data that you want to display, and then apply the snapshot in the user interface.
 
-8. The @objc attributes makes the method available to Objective-C code.
+8. The `@objc` attributes makes the method available to Objective-C code.
+
+9. `Target-Action` is a design pattern in which an object hodls the information necessary to send a message to another object when an event ocurrs. In the Today App, the `touch UpInside` event occurs when a user taps the done button, which sends the `didPressDoneButton: sender` message to the view controller.
