@@ -5,4 +5,8 @@
 //  Created by Wanderson López on 5/05/22.
 //
 
-import Foundation
+import UIKit
+
+class ReminderDoneButton: UIButton {
+    var id: Reminder.ID?
+}
