@@ -28,5 +28,12 @@ extension ReminderViewController {
             let configuration = UIImage.SymbolConfiguration(textStyle: .headline)
             return UIImage(systemName: imageName, withConfiguration: configuration)
         }
+        
+        var textStyle: UIFont.TextStyle {
+            switch self {
+            case .viewTitle: return .headline
+            default: return . subheadline
+            }
+        }
     }
 }
