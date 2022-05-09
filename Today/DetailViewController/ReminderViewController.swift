@@ -9,6 +9,7 @@ import UIKit
 
 class ReminderViewController: UICollectionViewController {
     private typealias DataSource = UICollectionViewDiffableDataSource<Int, Row>
+    private typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Row>
     
     var reminder: Reminder
     private var dataSource: DataSource!
@@ -40,6 +41,10 @@ class ReminderViewController: UICollectionViewController {
         contentConfiguration.image = row.image
         cell.contentConfiguration = contentConfiguration
         cell.tintColor = .todayPrimaryTint
+    }
+    
+    private func updateSnapshot() {
+        
     }
     
     func text(for row: Row) -> String? {
