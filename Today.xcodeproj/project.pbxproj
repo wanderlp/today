@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B422D8A2829AA8F001CC809 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B422D892829AA8F001CC809 /* ReminderViewController.swift */; };
 		7B979B2228219D17004EDD18 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B979B2128219D17004EDD18 /* Reminder.swift */; };
 		7B979B242821DE51004EDD18 /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B979B232821DE51004EDD18 /* Date+Today.swift */; };
 		7B979B282821E299004EDD18 /* ReminderListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B979B272821E299004EDD18 /* ReminderListViewController+DataSource.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B422D892829AA8F001CC809 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		7B979B2128219D17004EDD18 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Reminder.swift; path = ../../../today/Today/Models/Reminder.swift; sourceTree = "<group>"; };
 		7B979B232821DE51004EDD18 /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Date+Today.swift"; path = "../../../today/Today/Models/Date+Today.swift"; sourceTree = "<group>"; };
 		7B979B272821E299004EDD18 /* ReminderListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ReminderListViewController+DataSource.swift"; path = "../../../today/Today/ListViewController/ReminderListViewController+DataSource.swift"; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				7B979B272821E299004EDD18 /* ReminderListViewController+DataSource.swift */,
 				7B979B2D2824A42D004EDD18 /* ReminderListViewController+Actions.swift */,
 				7B979B2B2824A36A004EDD18 /* ReminderDoneButton.swift */,
+				7B422D892829AA8F001CC809 /* ReminderViewController.swift */,
 			);
 			path = ListViewController;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				7BEE51DB28219A4F00BFBFFE /* SceneDelegate.swift in Sources */,
 				7B979B242821DE51004EDD18 /* Date+Today.swift in Sources */,
 				7B979B282821E299004EDD18 /* ReminderListViewController+DataSource.swift in Sources */,
+				7B422D8A2829AA8F001CC809 /* ReminderViewController.swift in Sources */,
 				7BEE51E328219A4F00BFBFFE /* Today.xcdatamodeld in Sources */,
 				7B979B2228219D17004EDD18 /* Reminder.swift in Sources */,
 			);
