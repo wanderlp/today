@@ -47,6 +47,9 @@ class ReminderListViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        let id = reminders[indexPath.item].id
+        showDetail(for: id)
+        
         // When a user taps a list cell, the tap can change the cell
         // to a selected mode or initiate some other behavior.
         return false
