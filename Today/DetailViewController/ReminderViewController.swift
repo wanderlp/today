@@ -27,6 +27,8 @@ class ReminderViewController: UICollectionViewController {
     
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, row: Row) {
         var contentConfiguration = cell.defaultContentConfiguration()
+        contentConfiguration.text = text(for: row)
+        contentConfiguration.textProperties.font = UIFont.preferredFont(forTextStyle: row.textStyle)
     }
     
     func text(for row: Row) -> String? {
