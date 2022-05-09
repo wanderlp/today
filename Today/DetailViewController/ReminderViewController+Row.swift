@@ -8,5 +8,7 @@
 import UIKit
 
 extension ReminderViewController {
-    
+    enum Row: Hashable {
+        
+    }
 }
