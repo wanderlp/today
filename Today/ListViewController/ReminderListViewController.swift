@@ -47,7 +47,9 @@ class ReminderListViewController: UICollectionViewController {
     }
     
     func showDetail(for id: Reminder.ID) {
-        
+        let reminder = reminder(for: id)
+        let viewController = ReminderViewController(reminder: reminder)
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
     private func listLayout() -> UICollectionViewCompositionalLayout {
