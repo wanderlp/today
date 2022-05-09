@@ -25,6 +25,12 @@ class ReminderViewController: UICollectionViewController {
         fatalError("Always initialize ReminderViewController using init(reminder:)")
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let cellRegistration = UICollectionView.CellRegistration(handler: cellRegistrationHandler)
+        
+    }
+    
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, row: Row) {
         var contentConfiguration = cell.defaultContentConfiguration()
         contentConfiguration.text = text(for: row)
