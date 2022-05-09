@@ -9,6 +9,9 @@ import UIKit
 
 extension ReminderViewController {
     enum Row: Hashable {
-        
+        case viewDate
+        case viewNotes
+        case viewTime
+        case viewTitle
     }
 }
