@@ -25,6 +25,10 @@ class ReminderViewController: UICollectionViewController {
         fatalError("Always initialize ReminderViewController using init(reminder:)")
     }
     
+    func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, row: Row) {
+        var contentConfiguration = cell.defaultContentConfiguration()
+    }
+    
     func text(for row: Row) -> String? {
         switch row {
         case .viewDate:  return reminder.dueDate.dayText
