@@ -22,5 +22,11 @@ extension ReminderViewController {
             default: return nil
             }
         }
+        
+        var image: UIImage? {
+            guard let imageName = imageName else { return nil }
+            let configuration = UIImage.SymbolConfiguration(textStyle: .headline)
+            return UIImage(systemName: imageName, withConfiguration: configuration)
+        }
     }
 }
