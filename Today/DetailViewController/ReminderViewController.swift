@@ -44,7 +44,10 @@ class ReminderViewController: UICollectionViewController {
     }
     
     private func updateSnapshot() {
-        
+        var snapshot = Snapshot()
+        snapshot.appendSections([0])
+        snapshot.appendItems([.viewTitle, .viewDate, .viewTime, .viewNotes], toSection: 0)
+        dataSource.apply(snapshot)
     }
     
     func text(for row: Row) -> String? {
