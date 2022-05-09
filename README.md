@@ -29,3 +29,5 @@ https://developer.apple.com/tutorials/app-dev-training/getting-started-with-toda
 11. `Class Inheritance and Initialization` indicates that a Swift subclass must call one of its superclass' designated initializers during initialization. ie: calling `super.init()`
 
 12. Diffable data sources that supply UIKit lists with data and styling require that items conform to `Hashable`. The diffable data source uses the hash value to determine what changed between two snapshots of the data.
+
+13. When you override a view controller´s life cycle method, you first give the superclass a chance to perform its own tasks prior to tyour custom tasks.
