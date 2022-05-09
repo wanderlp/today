@@ -29,6 +29,7 @@ class ReminderViewController: UICollectionViewController {
         var contentConfiguration = cell.defaultContentConfiguration()
         contentConfiguration.text = text(for: row)
         contentConfiguration.textProperties.font = UIFont.preferredFont(forTextStyle: row.textStyle)
+        contentConfiguration.image = row.image
     }
     
     func text(for row: Row) -> String? {
