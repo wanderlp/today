@@ -8,7 +8,10 @@
 import UIKit
 
 class ReminderViewController: UICollectionViewController {
+    private typealias DataSource = UICollectionViewDiffableDataSource<Int, Row>
+    
     var reminder: Reminder
+    private var dataSource: DataSource!
     
     init(reminder: Reminder) {
         self.reminder = reminder
